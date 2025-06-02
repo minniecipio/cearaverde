@@ -373,3 +373,67 @@ body.dark .card {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+.painel-ecologico {
+  background: var(--color-bg, #eaf5ea);
+  color: var(--color-text, #1b3c1b);
+  padding: 3rem 1rem;
+  text-align: center;
+  border-top: 2px solid #4caf50;
+  border-bottom: 2px solid #4caf50;
+}
+
+.painel-ecologico h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #388e3c;
+}
+
+.painel-indicadores {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.indicador {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 10px rgba(0, 100, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.indicador:hover {
+  transform: scale(1.05);
+}
+
+.indicador .valor {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4caf50;
+  margin-bottom: 0.5rem;
+}
+
+.indicador p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+/* Modo escuro */
+body.dark .painel-ecologico {
+  background: #1a2a1a;
+  color: #d0f0d0;
+}
+
+body.dark .indicador {
+  background: rgba(34, 51, 34, 0.9);
+  color: #e0f2f1;
+}
+
+body.dark .indicador .valor {
+  color: #81c784;
+}
